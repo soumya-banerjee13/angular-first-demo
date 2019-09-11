@@ -1,0 +1,9 @@
+<h1>Pipes</h1>
+{{ pipeDisplay.title | uppercase }}<br/>
+{{ pipeDisplay.rating | number: "2.1-2" }}<br/>
+{{ pipeDisplay.students | number }}<br/>
+{{ pipeDisplay.price | currency: "AUD" }}<br/>
+
+<h3>{{largeText | summary: 10 }}</h3>
+<h3>{{smallText | summary: 10}}</h3>
+<h3>{{largeText | prep}}</h3>

@@ -1,0 +1,18 @@
+<ul>
+    <li *ngFor="let course of courses">
+        {{course | uppercase}}
+    </li>
+</ul>
+<img src="{{imgUrl}}" /><br/>
+<button class="btn btn-primary" [class.active]="isActive">Click</button><br/>
+<!--<div (click)="onDivClick($event)">
+<button (click)="onSave($event)">Event</button>
+<hr/>
+{{email2}}<br/>
+<input #email (keyup.enter)="onInputClicked(email.value)"/><br/>
+<input [(ngModel)]="email2" (keyup.enter)="onInputClicked()"/>
+</div>-->
+<!--<app-student [firstName]="'abc'" (change)="changeFunction($event)"></app-student>-->
+<app-student2 [studentList]="studentList"></app-student2>
+<h3>Template Form</h3>
+<app-template-form></app-template-form>
